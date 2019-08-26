@@ -76,7 +76,9 @@ public class SlidingTabActivity extends AppCompatActivity implements OnTabSelect
         tabLayout_9.setViewPager(vp);
         tabLayout_10.setViewPager(vp);
 
-        vp.setCurrentItem(4);
+        //vp.setCurrentItem(4);
+        //在布局文件中属性配置为 tl_textBold="SELECT"，调用下面方法第一项文字才会加粗
+        tabLayout_1.onPageSelected(0);
 
         tabLayout_1.showDot(4);
         tabLayout_3.showDot(4);
